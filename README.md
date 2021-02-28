@@ -1,4 +1,4 @@
-# Pong_videogame
+# Figure_2D_To_3D_Using_Solid_of_Revolution
 Pong videogame developed on Processing(Java)
 
 <!-- PROJECT LOGO -->
