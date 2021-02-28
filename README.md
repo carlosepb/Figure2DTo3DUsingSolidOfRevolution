@@ -55,15 +55,15 @@ Script que convierte una figura 2D en 3D proyectando los vértices por el eje z 
 <p align="justify">
 Se trata del desarrollo del videojuego PONG para dos jugadores, el jugador de la izquierda se desplazará utilizando las teclas “q” para subir y “a” para bajar (en minúscula siempre) y el jugador de la derecha hará lo propio utilizando la flecha arriba y la flecha abajo. Para pausar el juego o empezar se utilizará la tecla espacio (imagen_1.0).
 </p>
-<p align="center"><img src="images/Pause_pong.JPG" alt="pause" width="500" height="300"></br>imagen_1.0(Pause)</p>
+<p align="center"><img src="images/drawInterface.JPG" alt="pause" width="500" height="300"></br>imagen_1.0(Pause)</p>
 <p align="justify">
 El juego cuenta con dos marcadores que se incrementarán al marcar un gol al jugador contrarío. Al encajar un gol el balón volverá al centro saliendo impulsado hacia el jugador que acaba de marcar un gol (imagen_2.0).
 </p>
-<p align="center"><img src="images/gamePlay.JPG" alt="gamePlay" width="500" height="300"></br>imagen_2.0(Jugando)</p>
+<p align="center"><img src="images/3DFigure.JPG" alt="gamePlay" width="500" height="300"></br>imagen_2.0(Jugando)</p>
 <p align="justify">
 El saque inicial será siempre hacia el jugador de la derecha llevando una trayectoria y velocidad aleatoria siendo siempre una que no impida que el jugador pueda devolver la pelota, la cual incrementará su velocidad en cada remate (imagen_3.0).
 </p>
-<p align="center"><img src="images/animation_pong.gif" alt="gamePlay" width="500" height="300"></br>imagen_3.0(Saque)</p>
+<p align="center"><img src="images/animation.gif" alt="gamePlay" width="500" height="300"></br>imagen_3.0(Saque)</p>
 <p align="justify">
 El juego termina cuando uno de los jugadores llega a 5 puntos.
 </p>
