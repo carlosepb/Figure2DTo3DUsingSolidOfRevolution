@@ -9,14 +9,14 @@ Script que convierte una figura 2D en 3D proyectando los vértices por el eje z 
   <p align="center">
     ¡Usa un solido de revolución para crear una figura 3D!
     <br />
-      <a href="https://github.com/carlosepb/Pong_videogame"><strong>Explorar repositorio»</strong></a>
+      <a href="https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution"><strong>Explorar repositorio»</strong></a>
     <br />
     <br />
-      <a href="https://github.com/carlosepb/Pong_videogame/blob/main/images/animation_pong.gif">Ver Demo</a>
+      <a href="https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution/blob/main/images/animation.gif">Ver Demo</a>
       ·
-      <a href="https://github.com/carlosepb/Pong_videogame/issues">Reportar Error</a>
+      <a href="https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution/issues">Reportar Error</a>
       ·
-      <a href="https://github.com/carlosepb/Pong_videogame/issues">Solicitar Colaboración</a>
+      <a href="https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution/issues">Solicitar Colaboración</a>
     </p>
   </p>
 
