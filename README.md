@@ -4,14 +4,10 @@ Script que convierte una figura 2D en 3D proyectando los vértices por el eje z 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/carlosepb/Pong_videogame">
-    <img src="images/logo.png" alt="Logo" width="200" height="70">
-  </a>
-
-  <h3 align="center">Videojuego Pong</h3>
+  <h3 align="center">Script que convierte una figura 2D en 3D</h3>
 
   <p align="center">
-    ¡Videojuego PONG desarrollado en Processing3!
+    ¡Usa un solido de revolución para crear una figura 3D!
     <br />
       <a href="https://github.com/carlosepb/Pong_videogame"><strong>Explorar repositorio»</strong></a>
     <br />
