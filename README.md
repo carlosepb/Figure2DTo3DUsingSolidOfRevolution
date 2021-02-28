@@ -128,7 +128,7 @@ Autor: Carlos Eduardo Pacichana Bastidas
 
 Email: carlos.eduardo.pacichana@gmail.com  carlos.pacichana101@alu.ulpgc.es
 
-Enlace al proyecto: [https://github.com/carlosepb/Pong_videogame](https://github.com/carlosepb/Pong_videogame)
+Enlace al proyecto: [https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution](https://github.com/carlosepb/Figure2DTo3DUsingSolidOfRevolution)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Agradecimientos
