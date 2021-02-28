@@ -52,40 +52,34 @@ Script que convierte una figura 2D en 3D proyectando los vértices por el eje z 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el Proyecto
 <p align="justify">
-Se trata del desarrollo del videojuego PONG para dos jugadores, el jugador de la izquierda se desplazará utilizando las teclas “q” para subir y “a” para bajar (en minúscula siempre) y el jugador de la derecha hará lo propio utilizando la flecha arriba y la flecha abajo. Para pausar el juego o empezar se utilizará la tecla espacio (imagen_1.0).
+Pequeña aplicación para convertir una figura en 2D en 3D proyectando sus vértices a través del eje z consiguiendo así darle profundidad generando una figura simétrica.
+Para esto al ejecutar tendremos una primera pantalla dividida por una línea blanca en dos mitades en la que podremos dibujar la figura que queremos proyectar en el lado izquierdo terminando el modo edición al crear un vértice en el lado izquierdo, pudiendo borrar la figura dibujada en cualquier momento pulsando la tecla espacio(imagen_1.0).
 </p>
-<p align="center"><img src="images/drawInterface.JPG" alt="pause" width="400" height="425"></br>imagen_1.0(Pause)</p>
+<p align="center"><img src="images/drawInterface.JPG" alt="draw interface" width="400" height="425"></br>imagen_1.0(Pause)</p>
 <p align="justify">
-El juego cuenta con dos marcadores que se incrementarán al marcar un gol al jugador contrarío. Al encajar un gol el balón volverá al centro saliendo impulsado hacia el jugador que acaba de marcar un gol (imagen_2.0).
+Una vez hacemos clic en la parte izquierda de la primera pantalla del programa se generará la figura en 3D, pudiendo borrarla y volver a la zona de dibujo pulsando la tecla espacio(imagen_2.0).
 </p>
-<p align="center"><img src="images/3DFigure.JPG" alt="gamePlay" width="400" height="425"></br>imagen_2.0(Jugando)</p>
+<p align="center"><img src="images/3DFigure.JPG" alt="figure generated" width="400" height="425"></br>imagen_2.0(Jugando)</p>
 <p align="justify">
-El saque inicial será siempre hacia el jugador de la derecha llevando una trayectoria y velocidad aleatoria siendo siempre una que no impida que el jugador pueda devolver la pelota, la cual incrementará su velocidad en cada remate (imagen_3.0).
+Como podemos ver en el gif inferior podemos dibujar haciendo clic en distintos puntos de la zona de dibujo y dejando que esta se una automáticamente. También podemos ver unas cuantas figuras generadas y como con solo pulsar espacio borramos la figura actual y podemos proceder a dibujar otra sin ningún problema(imagen_3.0).
 </p>
-<p align="center"><img src="images/animation.gif" alt="gamePlay" width="400" height="425"></br>imagen_3.0(Saque)</p>
-<p align="justify">
-El juego termina cuando uno de los jugadores llega a 5 puntos.
-</p>
-<p align="center"><img src="images/win.JPG" alt="gamePlay" width="500" height="300"></br>imagen_4.0(Victoria)</p>
+<p align="center"><img src="images/animation.gif" alt="draw and generate" width="400" height="425"></br>imagen_3.0(Saque)</p>
 
 ## Trabajo Realizado
 <p align="justify">
-En la primera pantalla que servirá también como pantalla de pausa veremos los controles generales del juego, esto es así para aprovechar la pausa como menú de instrucciones.
+En cada una de las pantallas tendremos un mensaje en la parte superior izquierda en la que podemos ver el comando de borrado que consiste únicamente en pulsar la tecla espacio.
 </p>
 <p align="justify">
-Los elementos en pantalla como las palas o la pelota se han definido utilizando un grupo de variables de tipo entero que definen su posición, tamaño y zonas de colisión.
+Para dibujar las líneas que unen los vértices de la pantalla de dibujo se utilizan la variables mousePressed, mouseX y mouseY para saber cuando se interactúa usando el ratón y las coordenada en las que se ha hecho clic, además de si se encuentra en la de finalizar dibujo.
 </p>
 <p align="justify">
-Para los movimientos de las palas se han utilizado los eventos de tecla pulsada y liberada para evitar la colisión de eventos al definirlos de manera lineal en el bucle principal, lo cual producía que uno de los jugadores pudiese bloquear al otro al no dejar de moverse.
+Se ha creado una pequeña clase con solo dos variables y un constructor para guardar las coordenadas de cada vértice y almacenarlas en un arraylist para el momento de dibujar la figura y rotar los vértices hacerlo con mayor facilidad independientemente del número de estos que haya.
 </p>
 <p align="justify">
-Cada jugador y su marcador aparecerá en un color distinto y cuando alguno llega a 5 goles vera un mensaje de victoria con su nombre y color.
+Se utiliza la función translate para mover la figura ya generada por la interfaz a modo de poder visualizarla desde distintos puntos, esta seguirá el puntero del ratón.
 </p>
 <p align="justify">
-Se han añadido 3 sonidos distintos para los distintos puntos de colisión de la pelota (campo, raqueta o línea de gol).
-</p>
-<p align="justify">
-La grabación de gif está disponible pero para una ejecución mas optima se encuentra comentada en el código, en caso de querer usarla descomentar las líneas 43, 44, 222 y 276. Para parar la grabación haremos un clic sobre la pantalla ya que esta se encuentra en un evento de ratón pulsado.
+Para rotar los vértices se ha creado una función a la que se le pasan el vértice actual y el inmediatamente inferior además del ángulo el cual definirá el número de polígonos que tendrá la figura al rotar(a mayor ángulo mas cuadrada será y menor ángulo mas suavizado será el resultado).
 </p>
 
 ## Herramientas de Desarrollo
@@ -96,7 +90,7 @@ La grabación de gif está disponible pero para una ejecución mas optima se enc
 ## Empezando
 
 <p align="justify">
-Para modificar la aplicación necesitará instalar el entorno de desarrollo Processing3 y las herramientas Sound y GifAnimation. En caso de que solo quiera ejecutar la versión release no será necesario que instale nada y puede pasar directamente al paso Ejecutar->Release.
+Para modificar la aplicación necesitará instalar el entorno de desarrollo Processing3 y la herramienta GifAnimation si desea generar imagenes en formato ".gif". En caso de que solo quiera ejecutar la versión release no será necesario que instale nada y puede pasar directamente al paso Ejecutar->Release.
 </p>
 
 ### Prerrequisitos
@@ -104,12 +98,7 @@ Para modificar la aplicación necesitará instalar el entorno de desarrollo Proc
 * Descargar y descomprimir Processing3, lo puedes encontrar [aquí](https://processing.org/download/).
 
 ### Instalación
-
-1. Instalar la biblioteca de sonido de la Processing Foundation desde el IDE Processing3.
-    * Herramientas->Añadir herramientas.
-    * Buscar Sound en la pestaña Libraries.
-    * Install.
-2. Para exportar a un archivo con formato gif animado es necesario instalar GifAnimation, lo puede encontrar [aquí](https://github.com/extrapixel/gif-animation).
+1. Para exportar a un archivo con formato gif animado es necesario instalar GifAnimation, lo puede encontrar [aquí](https://github.com/extrapixel/gif-animation).
    
 ### Ejecutar
 
@@ -125,18 +114,7 @@ Para modificar la aplicación necesitará instalar el entorno de desarrollo Proc
 <!-- ROADMAP -->
 ## Hoja de Ruta
 
-Planes para la versión 0.2:
-
-* Mejorar sistema de colisiones de la pelota con las raquetas.
-* Añadir celebración de gol al anotar un gol.
-* Añadir mensaje dinámico de celebración al llegar un jugador a los 5 goles.
-* Mejoras de estabilidad.
-
-Planes para la versión 0.3:
-
-* Ajustar tamaño de pelota.
-* Cambiar colores de los jugadores.
-* Añadir nuevas pistas de juego.
+En este momento no hay planes de mejorar la aplicación.
 
 <!-- LICENSE -->
 ## Licencia
@@ -155,7 +133,6 @@ Enlace al proyecto: [https://github.com/carlosepb/Pong_videogame](https://github
 <!-- ACKNOWLEDGEMENTS -->
 ## Agradecimientos
 * [Processing](https://processing.org/)
-* [Freewavesamples](https://freewavesamples.com/)
 * [Gif-animation](https://github.com/extrapixel/gif-animation)
 * [Funprogramming](https://funprogramming.org/)
 * [Text](https://processing.org/reference/text_.html)
