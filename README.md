@@ -81,6 +81,9 @@ Se utiliza la función translate para mover la figura ya generada por la interfa
 <p align="justify">
 Para rotar los vértices se ha creado una función a la que se le pasan el vértice actual y el inmediatamente inferior además del ángulo el cual definirá el número de polígonos que tendrá la figura al rotar(a mayor ángulo mas cuadrada será y menor ángulo mas suavizado será el resultado).
 </p>
+<p align="justify">
+La grabación de gif está disponible pero para una ejecución mas optima se encuentra comentada en el código, en caso de querer usarla descomentar las líneas 20, 21, 80 y 92. Para parar la grabación haremos un clic sobre la pantalla ya que esta se encuentra en un evento de ratón pulsado.
+</p>
 
 ## Herramientas de Desarrollo
 
@@ -105,7 +108,7 @@ Para modificar la aplicación necesitará instalar el entorno de desarrollo Proc
 1. Release.
     * Descomprimir rar.
     * Entrar a la versión correspondiente a nuestro windows.
-    * Lanzar pong.exe.
+    * Lanzar SolidOfRevolution.exe.
 2. Proyecto.
     * Descomprimir rar.
     * Ejecutar Processin3.
