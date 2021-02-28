@@ -1,5 +1,5 @@
 # Figure_2D_To_3D_Using_Solid_of_Revolution
-Pong videogame developed on Processing(Java)
+Script que convierte una figura 2D en 3D proyectando los vértices por el eje z desarrollado en el entorno Processing3.
 
 <!-- PROJECT LOGO -->
 <br />
